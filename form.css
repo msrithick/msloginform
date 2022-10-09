@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Kalam:wght@300&family=Poppins:wght@400;500;600&family=Ramabhadra&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(90deg, rgb(218, 138, 170) 0%, rgb(151, 138, 81) 100%);
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background: white;
+    border-radius: 12px;
+    box-shadow: 15px 22px 25px rgb(92, 65, 77);
+    overflow: hidden;
+    max-width: 100%;
+    width: 400px;
+}
+.header{
+    border-bottom: 1px solid #f1eeee;
+    background-color: rgb(245, 245, 245);
+    padding: 10px 30px;
+    text-align: center;
+}
+.header h2{
+    margin: 0;
+    font-weight: 600;
+    font-size: 28px;
+}
+.form{
+    padding: 30px 40px;
+}
+.form-fill{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-fill  label{
+    display: inline-block;
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+.form-fill input{
+    width: 100%;
+    border: 2px solid #f0f0f0;
+    display: block;
+    padding: 10px;
+    border-radius: 5px ;
+    font-size: 13.8px;
+}
+.form-fill input:focus{
+    outline: none;
+    border-color:rgb(138, 138, 138);
+    /* border: 1.2px solid rgb(255,3,4); */
+}
+.form-fill.success input{
+    border-color: #2ecc71;
+}
+.form-fill.error input{
+    border-color: red;
+}
+.form-fill i{
+    visibility: hidden;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+}
+.form-fill.success i.fa-check-circle-o{
+    color: #2ecc71;
+    visibility: visible;
+}
+.form-fill.error i.fa-exclamation-triangle{
+    color: red;
+    visibility: visible;
+}
+.form-fill small{
+    color: red;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    visibility: hidden;
+}
+.form-fill.error small{
+    visibility: visible;
+}
+.form button{
+    border: none;
+    width: 100%;
+    font-weight: 600;
+    display: block;
+    font-size: 26px;
+    background: linear-gradient(90deg, rgb(211, 84, 139) 0%, rgb(201, 174, 55) 100%);
+    color: white;
+    margin-top: 20px;
+    padding: 9px;
+    border-radius: 6px;
+    box-shadow: 10px 15px 28px rgba(37, 37, 37, 0.3); 
+}
+.form button:hover{
+    background: linear-gradient(90deg, rgb(88, 38, 60) 0%, rgb(99, 85, 24) 100%);
+    
+}
